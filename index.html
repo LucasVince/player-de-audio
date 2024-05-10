@@ -8,6 +8,11 @@
     <title>Player De Musicas</title>
 </head>
 <body>
+    <header>
+        <img src="img/58a0abde600d57eb2c34d7cab36dc7f4.jpg" width="50" style="clip-path: inset(0 0 20px 0); transform: translateY(10px);">
+        <h1>Trash Metal Krlh</h1>
+        <img src="img/58a0abde600d57eb2c34d7cab36dc7f4.jpg" width="50" style="clip-path: inset(0 0 20px 0); transform: translateY(10px) scaleX(-1);">
+    </header>
     <main>
         <!-- tornado of souls -->
         <div class="player">
@@ -55,7 +60,7 @@
                 <span>Addicted To Chaos</span>
             </div>
             <div class="play-download">
-                <ion-icon name="play-circle" class="play-circle"></ion-icon>
+                <ion-icon name="play-circle" class="play-circle" id="AdTCBt" onclick="playAdTC()"></ion-icon>
                 <a href="#">
                     <ion-icon name="code-download" class="code-download"></ion-icon>
                 </a>
@@ -68,7 +73,7 @@
                 <span>Trust</span>
             </div>
             <div class="play-download">
-                <ion-icon name="play-circle" class="play-circle"></ion-icon>
+                <ion-icon name="play-circle" class="play-circle" id="TrustBt" onclick="playTrust()"></ion-icon>
                 <a href="#">
                     <ion-icon name="code-download" class="code-download"></ion-icon>
                 </a>
@@ -252,6 +257,8 @@
     <audio src="audios/Tornado Of Souls.mp3" id="Tos"></audio>
     <audio src="audios/Holy Wars... The Punishment Due.mp3" id="Hw"></audio>
     <audio src="audios/Hangar 18.mp3" id="H18"></audio>
+    <audio src="audios/Addicted To Chaos.mp3" id="AdTC"></audio>
+    <audio src="audios/Trust.mp3" id="Trust"></audio>
     
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>

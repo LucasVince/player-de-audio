@@ -17,6 +17,14 @@ const HwBt = document.getElementById("HwBt");
 const H18 = document.getElementById("H18");
 const H18Bt = document.getElementById("H18Bt");
 
+// variaveis addicted to chaos
+const AdTC = document.getElementById("AdTC");
+const AdTCBt = document.getElementById("AdTCBt");
+
+// variaveis addicted to chaos
+const Trust = document.getElementById("Trust");
+const TrustBt = document.getElementById("TrustBt");
+
 // ---------------------------------------------------
 
 function pausarMusicas() { //pausa todas as musicas
@@ -33,6 +41,12 @@ function pausarMusicas() { //pausa todas as musicas
 
     H18.pause();
     H18Bt.setAttribute("name", "play-circle");
+
+    AdTC.pause();
+    AdTCBt.setAttribute("name", "play-circle");
+    
+    Trust.pause();
+    TrustBt.setAttribute("name", "play-circle");
 
     tocando = false;
     pausado = true
@@ -99,3 +113,41 @@ function playH18() { //tocar holy wars
 }
 
 // ---------------------------------------------------
+
+function playAdTC() { //tocar addicted to chaos
+    if (pausado == true) {
+        pausarMusicas();
+        AdTC.currentTime = 0;
+        AdTC.play();
+        AdTCBt.setAttribute("name", "pause-circle");
+        tocando = true;
+    } else { //pause
+        AdTC.pause();
+        AdTCBt.setAttribute("name", "play-circle");
+    }
+    pausado = true;
+    if (tocando == true || pausado == false) {
+        playPause.setAttribute("name", "pause-circle");
+        playPause.style.color = '#23b423';
+    }
+}
+
+// ---------------------------------------------------
+
+function playTrust() { //tocar tornado of souls
+    if (pausado == true) {
+        pausarMusicas();
+        Trust.currentTime = 0;
+        Trust.play();
+        TrustBt.setAttribute("name", "pause-circle");
+        tocando = true;
+    } else { //pause
+        Trust.pause();
+        TrustBt.setAttribute("name", "play-circle");
+    }
+    pausado = true;
+    if (tocando == true || pausado == false) {
+        playPause.setAttribute("name", "pause-circle");
+        playPause.style.color = '#23b423';
+    }
+}

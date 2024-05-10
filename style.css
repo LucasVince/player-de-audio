@@ -2,7 +2,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Reddit+Mono:wght@200..900&display=swap');
 
 body {
-    background-color: #111111;
+    background-image: url('img/dca0f9d57f827fa4682bab80d12af15c.jpg');
+    background-position: center 85%;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+header {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
 }
 
 .player {
@@ -84,6 +96,7 @@ body {
 
     position: fixed;
     bottom: 0;
+    left: 0;
     height: 75px;
     width: 100%;
 
@@ -94,8 +107,4 @@ body {
     color: #111111;
     font-size: 50pt;
     transition: 0.125s;
-}
-
-#play-pause-button:active {
-    transform: scale(0.9);
 }
